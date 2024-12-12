@@ -10,7 +10,7 @@ namespace Tyuiu.UhalovAK.Sprint6.Task6.V14.Test
         {
             DataService ds = new DataService();
             string path = @"C:\DataSprint6\InPutFileTask6V14.txt";
-            string wait = " GzTsc AucHJjziZ jiUFMDjMsEervIz ziwVyU";
+            string wait = "GzTsc AucHJjziZ jiUFMDjMsEervIz ziwVyU";
             string res = ds.CollectTextFromFile(path);
             Assert.AreEqual(wait, res);
         }
