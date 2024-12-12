@@ -16,7 +16,7 @@ namespace Tyuiu.UhalovAK.Sprint6.Task3.V28
 
         private void buttonHelp_MUA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 3 выполнил студент группы АСОиУб-23-2 Мальсагов Умар Асланович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 3 выполнил студент группы АСОиУБ-24-1 Ухалов Арсений Константинович", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FormMain_Load(object sender, EventArgs e)
