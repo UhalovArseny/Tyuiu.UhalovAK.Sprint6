@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint6;
+﻿using System.Text;
+using tyuiu.cources.programming.interfaces.Sprint6;
 
 namespace Tyuiu.UhalovAK.Sprint6.Task6.V14.Lib
 {
@@ -6,23 +7,24 @@ namespace Tyuiu.UhalovAK.Sprint6.Task6.V14.Lib
     {
         public string CollectTextFromFile(string path)
         {
-            string resStr = "";
+            StringBuilder resStr = new StringBuilder(); 
             using (StreamReader streamreader = new StreamReader(path))
             {
                 string line;
                 while ((line = streamreader.ReadLine()) != null)
                 {
                     string[] array = line.Split(' ');
-                    for (int i = 0; i < array.Length; i++)
+                    foreach (var word in array) 
                     {
-                        if (array[i].Contains("z"))
+                        if (word.Contains("z"))
                         {
-                            resStr = resStr + " " + array[i];
+                            resStr.Append(" ").Append(word); 
                         }
                     }
                 }
             }
-            return resStr;
+
+            return resStr.ToString().Trim();
         }
     }
 }
